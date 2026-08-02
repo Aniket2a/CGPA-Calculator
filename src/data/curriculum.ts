@@ -1,0 +1,115 @@
+import { Subject } from '../types';
+
+export const SEMESTER_3_CURRICULUM: Subject[] = [
+  {
+    id: 'sem3_ds',
+    name: 'Data Structures',
+    credits: 3,
+    maxMarks: 150,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_dldco',
+    name: 'Digital Logic & Computer Organization',
+    credits: 3,
+    maxMarks: 150,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_dm',
+    name: 'Discrete Mathematics',
+    credits: 2,
+    maxMarks: 100,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_mmc',
+    name: 'Multi-Disciplinary Minor Course',
+    credits: 2,
+    maxMarks: 100,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_oe',
+    name: 'Open Elective',
+    credits: 4,
+    maxMarks: 150,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_eem',
+    name: 'EEM Course',
+    credits: 2,
+    maxMarks: 50,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_ve',
+    name: 'Value Education',
+    credits: 2,
+    maxMarks: 50,
+    obtainedMarks: null,
+  },
+  {
+    id: 'sem3_cefp',
+    name: 'Community Engagement / Field Project',
+    credits: 2,
+    maxMarks: 50,
+    obtainedMarks: null,
+  },
+];
+
+export const ALL_SEMESTER_TEMPLATES: Record<number, Subject[]> = {
+  1: [
+    { id: 'sem1_m1', name: 'Engineering Mathematics - I', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem1_phy', name: 'Engineering Physics', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem1_bee', name: 'Basic Electrical Engineering', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem1_eg', name: 'Engineering Graphics & Design', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem1_cp', name: 'Programming in C', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem1_lab', name: 'Physics & Electrical Lab', credits: 2, maxMarks: 50, obtainedMarks: null },
+  ],
+  2: [
+    { id: 'sem2_m2', name: 'Engineering Mathematics - II', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem2_chem', name: 'Engineering Chemistry', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem2_pps', name: 'Python Programming', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem2_eme', name: 'Elements of Mechanical Engineering', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem2_eng', name: 'Technical English & Communication', credits: 2, maxMarks: 50, obtainedMarks: null },
+    { id: 'sem2_wshop', name: 'Workshop Practices Lab', credits: 2, maxMarks: 50, obtainedMarks: null },
+  ],
+  3: SEMESTER_3_CURRICULUM,
+  4: [
+    { id: 'sem4_dbms', name: 'Database Management Systems', credits: 4, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem4_os', name: 'Operating Systems', credits: 4, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem4_daa', name: 'Design & Analysis of Algorithms', credits: 3, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem4_se', name: 'Software Engineering', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem4_pqt', name: 'Probability & Queueing Theory', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem4_lab', name: 'DBMS & OS Lab', credits: 3, maxMarks: 100, obtainedMarks: null },
+  ],
+  5: [
+    { id: 'sem5_cn', name: 'Computer Networks', credits: 4, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem5_toc', name: 'Theory of Computation', credits: 4, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem5_ai', name: 'Artificial Intelligence', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem5_pe1', name: 'Professional Elective I', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem5_oe2', name: 'Open Elective II', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem5_lab', name: 'Networks & AI Lab', credits: 3, maxMarks: 100, obtainedMarks: null },
+  ],
+  6: [
+    { id: 'sem6_cd', name: 'Compiler Design', credits: 4, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem6_ml', name: 'Machine Learning', credits: 4, maxMarks: 150, obtainedMarks: null },
+    { id: 'sem6_cc', name: 'Cloud Computing', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem6_pe2', name: 'Professional Elective II', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem6_mp', name: 'Mini Project / Capstone Prep', credits: 4, maxMarks: 150, obtainedMarks: null },
+  ],
+  7: [
+    { id: 'sem7_cs', name: 'Cyber Security & Cryptography', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem7_bigdata', name: 'Big Data Analytics', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem7_pe3', name: 'Professional Elective III', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem7_intern', name: 'Industrial Internship / Training', credits: 4, maxMarks: 200, obtainedMarks: null },
+    { id: 'sem7_proj1', name: 'Major Project Phase - I', credits: 5, maxMarks: 200, obtainedMarks: null },
+  ],
+  8: [
+    { id: 'sem8_pe4', name: 'Professional Elective IV', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem8_oe3', name: 'Open Elective III', credits: 3, maxMarks: 100, obtainedMarks: null },
+    { id: 'sem8_proj2', name: 'Major Project Phase - II & Seminar', credits: 10, maxMarks: 300, obtainedMarks: null },
+  ],
+};

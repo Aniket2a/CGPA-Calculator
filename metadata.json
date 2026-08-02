@@ -1,0 +1,6 @@
+{
+  "name": "CGPA Calculator",
+  "description": "Modern B.Tech CGPA Calculator featuring Material 3 design, semester GPA calculator, grading analytics, performance graphs, and PDF report export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
